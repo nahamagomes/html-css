@@ -1,0 +1,30 @@
+@charset "UTF-8"; /*Permite a leitura de caracteres especiais*/
+body{
+    font-family: 'Courier New', Courier, monospace;
+    /* Para verificar as combinações de fontes acesso: https://www.w3schools.com/cssref/css_websafe_fonts.php */
+    font-size: 1em;
+    /*
+        Medidas Absolutas 
+            cm, mm, in (polegada), px, pt, pc (paica).
+            [Cada tela pode interpretar as medidas absolutas de uma forma. Isso vária de acordo com a tela]. As medidas pt, pc são recomendas para pápeis.
+
+        Medidas Relativas
+            em (altura relativa a letra m da fonte), ex (altura relativa a letra x da fonte), rem (relativa a altura rute, vw (relativo a largura da viewport), vh (relativo a altura da viewport), %.
+            
+    Medidas recomentadas pela W3C das font-size px, em.
+    16px geralmente = 1em.
+         
+    */
+}
+/* Peso da fonte: indica a grossura da letra. Parametro (FONT-WEIGHT): LIGHTER, NORMAL, BOLD, BOLDER ou (100 -900). Nem todas as fontes possuem a opção de inserir o peso da font, exemplo (Arial).*/
+
+/* Nem todas a fontes possuem a opção de (FONT_STYLE) para deixar o texto em italico */
+/* O parametro (TEXT-DECORATION) para sublinhar o texto. */
+
+/*shorthand font
+font-style, font-weight, font-size, font-family
+
+shorthand exemplo:
+font: italic border 3em 'Work Sans, sans-serif
+
+Nem todos parametros aceitam shorthand. */

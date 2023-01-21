@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Trabalhando com vídeos</title>
+</head>
+<body>
+    <!--Formatos suportados pelos navegadores (MP4, M4V, WEBM, OGV)--> 
+    <!--Aplicação HANDBRAKE conversor de vídeos-->
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video src="midias/Abelhas.mkv" width="500" controls poster="img/abelhas.jpg"></video>
+    <h1> Outra maneira de inserir vídeos localmente</h1>
+    <video width="500" controls poster="img/abelhas.jpg">
+        <source src="midias/Abelhas.webm" type="video/webm">
+        <source src="midias/Abelhas.mkv" type="video/mkv">
+        <source src="midias/abelhas.ogv" type="video/ogv">
+        <source src="midias/abelhas.mp4" type="videos/mp4">
+        <p>Seu navegador não tem compatibilidade para reprodução de vídeos.</p>
+    </video>
+    <!--A tag (VIDEO) serve para realizar a inserção de vídeos, há duas maneiras de fazer essa inserção. O parametro (WIDTH) define a largura do vídeo. O parametro (POSTER) define a imagem de capa do vídeo.-->
+
+    <!--O auto play mudou no Chrome ele ainda funciona desde que o vídeo esteja sem som, e só adicionar a tag muted antes do auto play.-->
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/_ibVhO-MQjg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/128417191?h=0c0ae1a062&color=ff9933" width="500" height="281" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

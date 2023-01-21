@@ -1,0 +1,104 @@
+@charset "UTF-8";
+@font-face {/*Fonte externa*/
+    font-family:'fandroid'; /*Dê um nome para fonte*/
+    src: url('../fonts/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+                /*
+                Tipos de format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanced Typography)
+                - svg
+            */
+}
+
+body {
+   background-color: #D7F7CA;
+   font-family: Arial, Helvetica, sans-serif;
+   margin:0px; 
+}
+
+header {
+    /*Background em gradiente*/
+    background-image: linear-gradient(to top, #4D753D, #667560);
+    height: 200px;
+}
+header > h1 {
+    text-align: center;
+    color: white;
+    margin:0px;
+    padding: 20px;
+    
+}
+header > p {
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    margin:0px;
+    margin-bottom: 2%;
+}
+
+nav {
+    padding: 0px 0px 10px 10px;
+   
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav > a:hover {
+   background-color: #73E677;
+   border-radius: 2px;
+}
+
+
+.principal {
+    font-family: 'fandroid', serif;
+    font-weight: normal;
+    text-align: left;
+    color: #306132;
+    font-size: 1.2em;
+}
+
+main {
+    background-color: #ffffff;
+    width: 600px;
+    padding: 1px;
+    margin: auto;
+    
+}
+section {
+    padding: 0px 10px 0px 10px;
+}
+
+section > p {
+    text-indent: 50px; /* Parametro para realizar identação */
+}
+
+.segundario {
+    font-family: 'fandroid', serif;
+    font-size: 16px;
+    color: #306132;
+    background-image: linear-gradient(to right, #73E677, #ffffff);
+}
+
+strong > a {
+    text-decoration: none;
+    color: #306132;
+    background-image: linear-gradient(to right, #81e184, #8aea8d);
+}
+
+.imggrande {
+        width: 580px; 
+    }
+
+.imgcenter {
+    margin: 25%;
+}

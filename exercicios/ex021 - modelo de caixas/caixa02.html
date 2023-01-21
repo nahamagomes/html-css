@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            box-shadow: 1px 1px 2px black; /*Sombra box*/
+            /*Deslocamento horizontal, vertical, espalhamento e cor da sombra*/
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+           
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px; 
+            /*
+            Arredondamento das bordas
+            1) - Top Left - Superior Esquerda  
+            2) - Top Right - Superior Direita
+            3) - Bottom Right - Inferior Direita
+            4) - Bottom Left - Inferior Esquerda    
+            */
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(165, 165, 165);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        /*
+            Borda decoradas (imagens)
+            border: 12px solid black;
+            padding: 10px;
+            border-image-source: url('');
+            border-image-slice: 27;
+            border-image-repeat: repeat;
+
+            --- shorthands
+            border: 12px solid black;
+            border-image: url('') numero repeat;
+        */
+    </style>
+</head>
+<body>
+    <!--DIV's semânticas-->
+    <header>
+        <!--Cabeçalho-->
+        <h1>Meu Site</h1>
+        <nav>
+            <!--Links-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <!--Conteúdo principal-->
+        <section id="assuntos">
+            <!--Seção-->
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <!--Artigos-->
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit obcaecati recusandae placeat libero consequuntur assumenda. Praesentium molestias aperiam excepturi pariatur sapiente. Nulla facilis officia repudiandae saepe quis asperiores optio dolorem.</p>
+                <aside>
+                    <!--Relativo ao artigo-->
+                    <p>Artigo escrito por José Silva</p>
+                </aside>
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <!--Roda pé-->
+        <p>Desenvolvido pelo Nahamã</p>
+
+    </footer>
+</body>
+</html>

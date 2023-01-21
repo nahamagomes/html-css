@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Fontes Externas</title>
+    <style>
+        /*
+            Regra para inserir fontes externas.
+        */
+        @font-face {
+            font-family:'Oabestira'; /*Dê um nome para fonte*/
+            src: url('fonts/Oabestira.otf') format('opentype'), url('fonts/Oabestira.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            /*
+                Tipos de format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanced Typography)
+                - svg
+            */
+        }
+        body {
+            font-family: sans-serif;
+        }
+        h1 {
+            font-family:'Oabestira', serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad exercitationem inventore explicabo, commodi optio nostrum tempora ex. Cumque obcaecati voluptates quam tenetur ab iure ea, corporis eveniet est, magnam aperiam.</p>    
+
+    <!-- 
+        COMO DESCOBRIR FONTES EXTERNAS APLICADAS EM IMAGENS
+        
+        https://www.whatfontis.com/
+        https://www.fontsquirrel.com/
+        https://www.myfonts.com/ 
+    
+    -->
+</body>
+</html>
