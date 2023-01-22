@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container {
+            background-image: url('img/target001.png');
+            background-size: 100% 100%;
+            height: 500px;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo {
+            background-image: url('img/target001.png');
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+        }
+
+        /*
+        O container sempre terá um posicionamento relativo e o que está dentro que é o conteudo deve ter um posicionamento absoluto. Todo conteúdo se inicia com posicionamento relativo.
+        */
+
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+
+</body>
+</html>
