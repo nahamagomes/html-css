@@ -35,7 +35,7 @@ header > h1 {
         Transformar em letras maiusculas
         text-transform: uppercase;
      */
-     font-size: 9vw; /*7% da largura da tela. ViewPort*/
+     font-size: 9vw; /*9% da largura da tela. ViewPort*/
 }
 
 header > p {
@@ -55,16 +55,20 @@ header a:hover, footer a:hover {
 section {
     padding-top: 10vh; /*10% da altura da tela. ViewPort*/
     padding-bottom: 10vh;/*10% da altura da tela. ViewPort*/
-    line-height: 2em; /*Espaçamento entre as linhas*/
+    line-height: 1.6em; /*Espaçamento entre as linhas*/
     padding-left: 30px;
     font-family: var(--font3);
     font-size: 3.3vw;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
 section.image > p {
     display: inline-block;
     padding: 5px;
-    background-color: rgb(0, 0, 0.253);
+    background-color: rgba(0, 0, 0, 0.305);
+    text-shadow: 1px 1px 0px black;
 }
 
 section.normal {
@@ -74,8 +78,25 @@ section.normal {
 
 section.image {
     background-color: rgb(51, 51, 51);
-    color:white
+    color:white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.649); /*Bordar com sentido interno (para dentro).*/
 }
+
+/*Efeito Parallax Simples*/
+section#img01 {
+    background-image: url(../img/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img02 {
+    background-image: url(../img/background002.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
 footer {
     background-color: black;
     color: white;
