@@ -13,7 +13,19 @@
 
         table {
             width: 600px;
+            border-collapse: collapse;
         }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
     </style>
 </head>
 <body>
@@ -116,7 +128,10 @@
             </tr>
         </tbody>
         <tfoot>
-
+            <tr>
+                <th>Total de habitantes</th>
+                <td><strong>0000</strong></td>
+            </tr>
         </tfoot>
     </table>
 
