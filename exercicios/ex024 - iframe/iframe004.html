@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Iframe mais seguro</title>
+</head>
+<body>
+    <h1>Meu siite principal</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis mollitia sapiente, nihil nobis nemo error, nulla illo, voluptates sint quod maiores dolores officia. Voluptates porro modi cupiditate deserunt aliquam sint?
+    </p>
+    <iframe src="pag_extra/pag004.html" frameborder="0" sandbox="sandbox" referrerpolicy="no-referrer">
+    <!--O parametro sandbox valor sandbox impede que uma página do iframe colete dados inseridos pelo usuário. O parametro referrerpolicy valor no-referrer o sistema impede a coleta de informações.-->
+
+    <!--
+        Paramentro sandbox value:
+        all-same-origin = Valores da mesma origem
+        allows-forms = Formularios
+        allow-scripts = Leitura de scripts
+    -->
+        <p>Não foi possível carregar a página</p>
+    </iframe>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, at amet. Ullam quis sapiente sed beatae tempore optio assumenda vitae dicta error natus? Quia ex porro et quam minima deleniti.
+    </p>
+</body>
+</html>
