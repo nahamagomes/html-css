@@ -17,12 +17,18 @@
     <h1>Meu primeiro formulário</h1>
 
     <form action="cadastro.php" autocomplete="off">
-        <p>Nome: 
-            <input type="text" name="nome" id="">
+        <!--Todo formulario deve ser iniciado com a tag (FORM) no parametro (ACTION) informe a folha que receberá as informações.
+        
+        O paramentro (NAME e ID) são identificadores para ser realizado a configurações em páginas JAVA, PHP, etc.
+    
+        No parametro (LABEL) informe o id ou name para ser realizado a identificação correta no formulário.-->
+        
+        <p><label for="inome">Nome: </label>
+            <input type="text" name="nome" id="inoem">
         </p>
 
-        <p>Sobrenome: 
-            <input type="text" name="sobrenome" id="">
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome">
         </p>
 
         <p><input type="submit" value="Enviar"></p>
