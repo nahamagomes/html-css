@@ -16,12 +16,22 @@
 <body>
     <h1>Meu primeiro formulário</h1>
 
-    <form action="cadastro.php" autocomplete="off">
-        <!--Todo formulario deve ser iniciado com a tag (FORM) no parametro (ACTION) informe a folha que receberá as informações.
+    <form action="cadastro.php" autocomplete="off" method="POST">
+        <!--
+            Todo formulario deve ser iniciado com a tag (FORM) no parametro (ACTION) informe a folha que receberá as informações.
         
-        O paramentro (NAME e ID) são identificadores para ser realizado a configurações em páginas JAVA, PHP, etc.
+            O paramentro (NAME e ID) são identificadores para ser realizado a configurações em páginas JAVA, PHP, etc.
     
-        No parametro (LABEL) informe o id ou name para ser realizado a identificação correta no formulário.-->
+            No parametro (LABEL) informe o id ou name para ser realizado a identificação correta no formulário.
+            
+            Method (GET) quando o envio de dados não forem sensiveis ou para compartilhamento. Limeite de envio 3 mil bytes. (Aproximadamente 3 mil letras)
+            Exemplo (Nome, altura, idade, etc).
+
+            Method (POST) para o envio de dados sensiveis.
+            Exemplo (Senhas, Fotos, Arquivos, mais de 3 mil bytes)
+
+            HTTPS metodo utilizado para criptografia e proteção de dados utilizado na  
+        -->
 
         <p><label for="inome">Nome: </label>
             <input type="text" name="nome" id="inome">
