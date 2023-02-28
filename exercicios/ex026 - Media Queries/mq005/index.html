@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Media Query</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Mediia Queries</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam a labore consectetur perferendis fugit quos illum nulla voluptatem eius perspiciatis distinctio doloribus modi repellat repudiandae, deserunt quam ullam voluptatum iusto?
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ullam dolore aut provident maxime labore nobis autem sapiente dolorem corrupti doloremque, quos necessitatibus veniam. Eos suscipit magni laudantium odit minima?
+            </p>
+
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis alias reprehenderit cumque sunt aliquid asperiores autem fugit fuga quasi quibusdam tempora ipsa doloribus, laborum repudiandae blanditiis dolore natus iusto. Saepe?
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem tenetur ipsa laboriosam incidunt doloremque, maxime dignissimos numquam provident voluptatibus sunt, explicabo nostrum, labore est rerum necessitatibus odit ad vel.
+            </p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+           if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+           } else {
+                itens.style.display ='block'
+           }
+        }
+    </script>
+</body>
+</html>
